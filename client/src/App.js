@@ -8,7 +8,10 @@ import PasswordList from './components/PasswordList';
 function App(props) {
   // <div className="App App-header">
   return (
+    <div>
+    <Header>SWAG</Header>
     <Main>
+
 
       <div className="App-div">
         <img src={logo} className="App-logo" alt="logo" />
@@ -19,8 +22,25 @@ function App(props) {
       </List>
 
     </Main>
+    </div>
   );
 }
+
+
+const Header = styled.div`
+  background: ${(props) => (props.colorScheme ? 'purple' : 'orange')};
+  background: gray;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color: white;
+  padding: 0px;
+  padding-right: 35px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+`;
 
 const Main = styled.div`
   background-color: #282c34;
@@ -36,5 +56,7 @@ const Main = styled.div`
 const List = styled.div`
   color: orange;
 `;
+
+
 
 export default App;

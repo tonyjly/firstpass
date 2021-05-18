@@ -5,7 +5,7 @@ const PasswordList = () => {
 
   return (
     <>
-      Password List Here
+      Password List
     </>
   )
 }
