@@ -4,8 +4,10 @@
   "description": "A free and open-source password manager",
   "main": "index.js",
   "scripts": {
-    "test": "test",
-    "journal": "git add journal/ && git commit journal/ -m 'update journal' && git push"
+    "start": "npx nodemon server/server.js",
+    "build": "webpack --watch",
+    "journal": "git add journal/ && git commit journal/ -m 'update journal' && git push",
+    "test": "test"
   },
   "repository": {
     "type": "git",
