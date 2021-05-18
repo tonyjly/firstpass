@@ -10,6 +10,7 @@
   - [Day 1 (5/18/2021)](#day-1-5182021)
       - [Initialize GitHub Repo](#initialize-github-repo)
       - [Design Tool (Bootstrap vs. Material-UI)](#design-tool-bootstrap-vs-material-ui)
+      - [Ideas](#ideas)
 
 ---
 
@@ -38,5 +39,8 @@
 
 ---
 
-####
-
+#### Ideas
+- details table
+  - password last changed date (e.g. "password last changed 32 days ago")
+  - password strength (e.g. weak, medium, strong, extreme, bulletproof)
+  - crack estimation (e.g. estimated time it will take to crack password, cite source)

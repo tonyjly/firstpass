@@ -1,28 +1,40 @@
-// import logo from './logo.svg';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import logo from './images/shield-keyhole-line.svg';
-import './App.css';
+import './styles/App.css';
 import styled from 'styled-components';
-import { ShieldKeyhole } from '@styled-icons/remix-line';
+import PasswordList from './components/PasswordList';
 
-function App() {
+function App(props) {
+  // <div className="App App-header">
   return (
-    <div className="App">
-      <header className="App-header">
+    <Main>
+
+      <div className="App-div">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      </div>
+
+      <List>
+        <PasswordList />
+      </List>
+
+    </Main>
   );
 }
+
+const Main = styled.div`
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+`;
+
+const List = styled.div`
+  color: orange;
+`;
 
 export default App;
