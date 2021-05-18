@@ -1,0 +1,25 @@
+{
+  "name": "firstpass",
+  "version": "1.0.0",
+  "description": "A free and open-source password manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonyjly/firstpass.git"
+  },
+  "keywords": [
+    "password",
+    "manager",
+    "free",
+    "open-source"
+  ],
+  "author": "Tony Ly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tonyjly/firstpass/issues"
+  },
+  "homepage": "https://github.com/tonyjly/firstpass#readme"
+}
