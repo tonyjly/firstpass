@@ -28,4 +28,5 @@ Design Tool (Bootstrap vs. Material UI)
 - While I am drawn to Material UI for its Material Design (Google), I am drawn to React Bootstrap for its higher design consistency in UX and interface
   - With this advantage, I expect to be able to focus more on developing content and features
   - Speed is important for the limited time we are afforded in our MVP project
+- Material UI vs Bootstrap: A Detailed Comparison ([UX Planet](https://uxplanet.org/material-ui-vs-bootstrap-a-detailed-comparison-8fc9151db5ed)) ([Infographic](https://miro.medium.com/max/700/0*Hrk9TH0yeTiVKjMA.png))
 
