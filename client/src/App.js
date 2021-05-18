@@ -1,5 +1,8 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import logo from './images/shield-keyhole-line.svg';
 import './App.css';
+import styled from 'styled-components';
+import { ShieldKeyhole } from '@styled-icons/remix-line';
 
 function App() {
   return (
