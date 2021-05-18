@@ -1,34 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
 import logo from './images/shield-keyhole-line.svg';
 import './styles/App.css';
 import styled from 'styled-components';
 import PasswordList from './components/PasswordList';
+import { Container } from 'react-bootstrap'
 
 function App(props) {
   // <div className="App App-header">
   return (
-    <div>
-    <Header>SWAG</Header>
-    <Main>
+    <>
+      <Header>SWAG</Header>
 
+      <Main>
 
-      <div className="App-div">
-        <img src={logo} className="App-logo" alt="logo" />
-      </div>
+        <div className="App-div">
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
 
-      <List>
-        <PasswordList />
-      </List>
+        <List>
+          <PasswordList />
+        </List>
 
-    </Main>
-    </div>
+      </Main>
+    </>
   );
 }
 
 
 const Header = styled.div`
-  background: ${(props) => (props.colorScheme ? 'purple' : 'orange')};
   background: gray;
   height: 100px;
   display: flex;
