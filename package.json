@@ -4,7 +4,8 @@
   "description": "A free and open-source password manager",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "journal": "git add journal/ && git commit journal/ -m 'update journal' && git push"
   },
   "repository": {
     "type": "git",
@@ -23,8 +24,10 @@
   },
   "homepage": "https://github.com/tonyjly/firstpass#readme",
   "dependencies": {
+    "bootstrap": "^5.0.1",
     "express": "^4.17.1",
     "react": "^17.0.2",
+    "react-bootstrap": "^1.6.0",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
