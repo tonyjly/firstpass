@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/tonyjly/firstpass#readme",
   "dependencies": {
-    "react": "^17.0.2"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.3",
