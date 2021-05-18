@@ -14,3 +14,18 @@ Initialized GitHub Repo
 
 ![](images/2021-05-18-09-42-20.png)
 
+
+Design Tool (Bootstrap vs. Material UI)
+- Deciding on which design tool to use: Bootstrap vs. Material UI
+- Bootstrap
+  - CSS/HTML/JS framework
+  - built by Twitter
+  - e.g. Airbnb, Dropbox, Apple Music, Twitter, Coursera
+- Material UI
+  - React UI framework
+  - built by an unnamed team
+  - e.g. Nasa, Amazon, Unity, Google, JPMorgan
+- While I am drawn to Material UI for its Material Design (Google), I am drawn to React Bootstrap for its higher design consistency in UX and interface
+  - With this advantage, I expect to be able to focus more on developing content and features
+  - Speed is important for the limited time we are afforded in our MVP project
+
