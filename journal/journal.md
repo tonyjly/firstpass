@@ -8,14 +8,15 @@
 
 ---
 
-Day 1 (5/18/2021)
+## Day 1 (5/18/2021)
 
-Initialized GitHub Repo
+#### Initialized GitHub Repo
 
 ![](images/2021-05-18-09-42-20.png)
 
+---
 
-Design Tool (Bootstrap vs. Material-UI)
+#### Design Tool (Bootstrap vs. Material-UI)
 - Deciding on which design tool to use: Bootstrap vs. Material-UI
 - - Material-UI vs Bootstrap: A Detailed Comparison ([UX Planet](https://uxplanet.org/material-ui-vs-bootstrap-a-detailed-comparison-8fc9151db5ed)) ([Infographic](https://miro.medium.com/max/700/0*Hrk9TH0yeTiVKjMA.png))
 - [React Bootstrap](https://react-bootstrap.github.io/)
