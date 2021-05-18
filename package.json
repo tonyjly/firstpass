@@ -2,10 +2,10 @@
   "name": "firstpass",
   "version": "1.0.0",
   "description": "A free and open-source password manager",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "npx nodemon server/server.js",
-    "build": "webpack --watch",
+    "build": "webpack --mode development --watch",
     "journal": "git add journal/ && git commit journal/ -m 'update journal' && git push",
     "test": "test"
   },

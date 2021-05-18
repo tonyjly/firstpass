@@ -2,11 +2,12 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
-app.use(express.static('../client/dist')); // Host your dist folder up to the server
+// app.use('/', express.static('../client/dist')); // Host your dist folder up to the server
+app.use(express.static(__dirname + '/../client/dist'));
 app.use(express.json()); // Alternative to BodyParser
 
 // If you had to handle requests on the server side, this is where that would occur
-app.get('/products/:id', (req, res) => {
+app.get('/', (req, res) => {
 		// Handle the request
 		// -- Could make DB queries here
 		// Send back O-K
