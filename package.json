@@ -1,51 +1,24 @@
 {
   "name": "firstpass",
   "version": "1.0.0",
-  "description": "A free and open-source password manager",
-  "main": "server.js",
+  "description": "",
+  "main": ".eslintrc.js",
   "scripts": {
-    "start": "npx nodemon server/server.js",
-    "build": "webpack --mode development --watch",
-    "journal": "git add journal/ && git commit journal/ -m 'update journal' && git push",
-    "test": "test"
+    "start": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tonyjly/firstpass.git"
   },
-  "keywords": [
-    "password",
-    "manager",
-    "free",
-    "open-source"
-  ],
-  "author": "Tony Ly",
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/tonyjly/firstpass/issues"
   },
   "homepage": "https://github.com/tonyjly/firstpass#readme",
   "dependencies": {
-    "axios": "^0.21.1",
-    "bootstrap": "^5.0.1",
-    "eslint-plugin-import": "^2.23.2",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "express": "^4.17.1",
-    "react": "^17.0.2",
-    "react-bootstrap": "^1.6.0",
-    "react-dom": "^17.0.2"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.14.3",
-    "@babel/core": "^7.14.3",
-    "@babel/polyfill": "^7.12.1",
-    "@babel/preset-env": "^7.14.2",
-    "@babel/preset-react": "^7.13.13",
-    "babel-loader": "^8.2.2",
-    "eslint": "^7.26.0",
-    "eslint-plugin-react": "^7.23.2",
-    "webpack": "^5.37.0",
-    "webpack-cli": "^4.7.0"
+    "express": "^4.17.1"
   }
 }
