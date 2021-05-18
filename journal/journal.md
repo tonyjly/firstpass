@@ -4,13 +4,18 @@
 ---
 
 # Table of Contents
-
+- [FirstPass](#firstpass)
+  - [Author: Tony Ly](#author-tony-ly)
+- [Table of Contents](#table-of-contents)
+  - [Day 1 (5/18/2021)](#day-1-5182021)
+      - [Initialize GitHub Repo](#initialize-github-repo)
+      - [Design Tool (Bootstrap vs. Material-UI)](#design-tool-bootstrap-vs-material-ui)
 
 ---
 
 ## Day 1 (5/18/2021)
 
-#### Initialized GitHub Repo
+#### Initialize GitHub Repo
 
 ![](images/2021-05-18-09-42-20.png)
 
@@ -30,4 +35,8 @@
 - While I am drawn to Material-UI for its Material Design (Google), I am drawn to React Bootstrap for its higher design consistency in UX and interface
   - With this advantage, I expect to be able to focus more on developing content and features
   - Speed is important for the limited time we are afforded in our MVP project
+
+---
+
+####
 
