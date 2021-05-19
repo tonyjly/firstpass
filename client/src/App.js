@@ -4,42 +4,77 @@ import logo from './images/shield-keyhole-line.svg';
 import './styles/App.css';
 // import styled from 'styled-components';
 import PasswordList from './components/PasswordList';
-// import { Container, Row, Col } from 'react-bootstrap'
 import AppStyles from './styles/AppStyles';
+import { ShieldKeyhole } from '@styled-icons/remix-line';
 
-import { Jumbotron } from 'react-bootstrap';
+import { Container, Row, Col, Jumbotron, Navbar } from 'react-bootstrap';
 import Navigation from './components/Navigation';
 
-const { Main, List, Logo, JumboDiv } = AppStyles;
+const { Main, List, Logo, JumboDiv, NavigationLogo } = AppStyles;
 
 function App(props) {
   return (
-    <div>
-      <Navigation/>
+    <Container className="App" fluid="md">
 
-      <Main>
+      {/* NAVIGATION */}
+      <Row>
+        <Col>
+          <Navigation/>
+        </Col>
+      </Row>
 
-        <div className="App-div">
-          <Logo src={logo} className="App-logo" alt="logo"/>
-        </div>
+      <Row>
 
-        <Jumbotron fluid>
-          <JumboDiv>
-            <h1>Welcome</h1>
-            <p>
-              This is a modified jumbotron that occupies the entire horizontal space of
-              its parent.
-            </p>
-          </JumboDiv>
-        </Jumbotron>
+        <Col sm={2}>
+          <p>Home</p>
+          <p>Passwords</p>
+          <p>Notes</p>
+          <p>Addresses</p>
+          <p>Payments</p>
+          <p>Bank Accounts</p>
+        </Col>
 
-        <List>
-          <PasswordList />
-        </List>
+        <Col>
 
-      </Main>
-    </div>
+          <Jumbotron fluid>
+            <JumboDiv>
+              <h1>Welcome</h1>
+              <p>
+                FirstPass is your free, open-source password manager.
+              </p>
+            </JumboDiv>
+          </Jumbotron>
+
+          <PasswordList/>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
 export default App;
+
+/* <div>
+<Navigation/>
+
+<Main>
+
+  <div className="App-div">
+    <Logo src={logo} className="App-logo" alt="logo"/>
+  </div>
+
+  <Jumbotron fluid>
+    <JumboDiv>
+      <h1>Welcome</h1>
+      <p>
+        To your free, open-source password manager.
+      </p>
+    </JumboDiv>
+  </Jumbotron>
+
+  <List>
+    <PasswordList />
+  </List>
+
+</Main>
+</div> */

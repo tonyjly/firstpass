@@ -28,14 +28,9 @@ const Right = styled.div`
 `;
 
 const Main = styled.div`
-  background-color: #D8DEE9;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: red;
   color: white;
+  padding: 0;
 `;
 
 const List = styled.div`
@@ -45,14 +40,15 @@ const List = styled.div`
 const Logo = styled.image`
   /* fill: blue; */
   color: blue;
+  border-color: green;
 `;
 
 const NavigationLogo = styled.span`
-  margin: 0 4px 0 4px;
+  margin: 0;
 `;
 
 const NavigationIcon = styled.span`
-  margin: 0 16px 0 0;
+  /* margin: 0 16px 0 0; */
 `;
 
 const JumboDiv = styled.div`

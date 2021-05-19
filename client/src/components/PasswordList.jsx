@@ -14,6 +14,7 @@ const passwords = [
 ];
 
 const PasswordList = () => {
+  // use bootstrap fade effect to hide/show passwords
 
   return (
     <div>
