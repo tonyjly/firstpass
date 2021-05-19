@@ -8,14 +8,14 @@ import PasswordList from './components/PasswordList';
 import AppStyles from './styles/AppStyles';
 
 import { Jumbotron } from 'react-bootstrap';
-import Dashboard from './components/Dashboard';
+import Navigation from './components/Navigation';
 
 const { Main, List, Logo, JumboDiv } = AppStyles;
 
 function App(props) {
   return (
     <div>
-      <Dashboard/>
+      <Navigation/>
 
       <Main>
 

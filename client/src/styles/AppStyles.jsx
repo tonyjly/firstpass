@@ -47,11 +47,11 @@ const Logo = styled.image`
   color: blue;
 `;
 
-const DashboardLogo = styled.span`
+const NavigationLogo = styled.span`
   margin: 0 4px 0 4px;
 `;
 
-const DashboardIcon = styled.span`
+const NavigationIcon = styled.span`
   margin: 0 16px 0 0;
 `;
 
@@ -60,5 +60,5 @@ const JumboDiv = styled.div`
 `;
 
 export default {
-  Header, Left, Right, Main, List, Logo, DashboardLogo, DashboardIcon, JumboDiv
+  Header, Left, Right, Main, List, Logo, NavigationLogo, NavigationIcon, JumboDiv
 };
