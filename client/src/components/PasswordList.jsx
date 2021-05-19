@@ -1,31 +1,31 @@
 // import React from 'react';
 // import ReactDOM from 'react-dom';
+import { Card, ListGroup } from 'react-bootstrap';
 
 const passwords = [
-  'Password 1',
-  'Password 2',
-  'Password 3',
-  'Password 4',
-  'Password 5',
-  'Password 6',
-  'Password 7',
-  'Password 8',
+  'Application 1',
+  'Application 2',
+  'Application 3',
+  'Application 4',
+  'Application 5',
+  'Application 6',
+  'Application 7',
+  'Application 8',
 ];
 
 const PasswordList = () => {
 
   return (
-    <>
-      <div>
-        {passwords.map((password) => (
-          <div>{password}</div>
-        ))}
-      </div>
-
-      <div>
-
-      </div>
-    </>
+    <div>
+      <Card style={{ width: '18rem' }}>
+        <Card.Header>Passwords</Card.Header>
+        <ListGroup variant="flush">
+          {passwords.map((password) => (
+            <ListGroup.Item>{password}</ListGroup.Item>
+          ))}
+        </ListGroup>
+      </Card>
+    </div>
   )
 }
 

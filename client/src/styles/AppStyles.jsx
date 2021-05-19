@@ -42,6 +42,11 @@ const List = styled.div`
   color: #5E81AC;
 `;
 
+const Logo = styled.image`
+  /* fill: blue; */
+  color: blue;
+`;
+
 const DashboardLogo = styled.span`
   margin: 0 4px 0 4px;
 `;
@@ -50,6 +55,10 @@ const DashboardIcon = styled.span`
   margin: 0 16px 0 0;
 `;
 
+const JumboDiv = styled.div`
+  color: #5E81AC;
+`;
+
 export default {
-  Header, Left, Right, Main, List, DashboardLogo, DashboardIcon
+  Header, Left, Right, Main, List, Logo, DashboardLogo, DashboardIcon, JumboDiv
 };
