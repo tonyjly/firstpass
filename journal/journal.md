@@ -59,4 +59,6 @@
   - password last changed date (e.g. "password last changed 32 days ago")
   - password strength (e.g. weak, medium, strong, extreme, bulletproof)
   - crack estimation (e.g. estimated time it will take to crack password, cite source)
-
+- password generators
+  - [random.org](https://www.random.org/passwords/)
+  - [manytools.org](https://manytools.org/network/password-generator/)
