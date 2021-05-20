@@ -15,6 +15,7 @@
   - [Day 2 (5/19/2021)](#day-2-5192021)
       - [Notes](#notes)
       - [TODO](#todo)
+- [Blue Ocean Notes](#blue-ocean-notes)
 
 ---
 
@@ -106,3 +107,12 @@ tony@pop-os:~/Nextcloud/HR-SEA16/mvp/firstpass$
 - jumbotron margin
 - https://ui.dev/react-router-v4-pass-props-to-components/
 - SSL
+
+
+---
+
+# Blue Ocean Notes
+
+-
+
+
