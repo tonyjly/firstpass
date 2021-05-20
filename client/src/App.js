@@ -22,6 +22,7 @@ const { Main, List, Logo, JumboDiv, NavigationLogo } = AppStyles;
 
 function App() {
   const [login, setLogin] = useState(false);
+  const [name, setName] = useState('');
 
   return (
     <Container className="App" fluid="md">

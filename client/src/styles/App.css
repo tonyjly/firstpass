@@ -63,3 +63,23 @@
   background-color: #5E81AC !important;
   border: none !important;
 }
+
+.center {
+  text-align: center;
+}
+
+.transparent {
+  opacity: 0;
+}
+
+.hidetext {
+  -webkit-text-security: disc;
+}
+
+/* a {
+  color:red;
+}
+
+a:hover {
+  color:red;
+} */

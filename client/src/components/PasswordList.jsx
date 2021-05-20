@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 import styled from 'styled-components';
-import { Card, ListGroup, Table, Form, Col, Row, Button, InputGroup, FormControl } from 'react-bootstrap';
-import { Eye, EyeSlash } from '@styled-icons/bootstrap';
+// import { Card, ListGroup, Table, Form, Col, Row, Button, InputGroup, FormControl } from 'react-bootstrap';
+import { Table, Button, InputGroup, FormControl } from 'react-bootstrap';
+
 import PasswordCreate from './PasswordCreate';
+import PasswordItem from './PasswordItem';
 
 const passwords = [
   'ToHi5UkKA^oF3EYVQcM@vFL2m&dohSSH',
@@ -24,6 +26,7 @@ const PasswordList = () => {
   // use bootstrap fade effect to hide/show passwords
   const [list, setList] = useState([]);
   const [modalShow, setModalShow] = useState(false);
+  const [password, setPassword] = useState('');
 
   useEffect(() => {
     axios.get('/passwords')
@@ -51,17 +54,17 @@ const PasswordList = () => {
 
       <InputGroup className="mb-3">
         <FormControl
-          placeholder="Recipient's username"
-          aria-label="Recipient's username"
+          placeholder="Password"
+          aria-label="Generate Password"
           aria-describedby="basic-addon2"
-          value=""
+          onChange={(e) => setPassword(e.target.value)}
         />
 
         {/* <InputGroup.Append>
           <InputGroup.Text id="basic-addon2">@example.com</InputGroup.Text>
         </InputGroup.Append> */}
 
-        <Button variant="primary" type="submit" className="nord-btn" onClick={(e) => {e.preventDefault();}}>
+        <Button variant="primary" type="submit" className="nord-btn" onClick={(e) => setPassword('yolo')}>
           Generate
         </Button>
       </InputGroup>
@@ -93,12 +96,7 @@ const PasswordList = () => {
           </thead>
           <tbody className="ptable">
             {list.map((password) => (
-              <tr>
-                <td>{password.id}</td>
-                <td><a href={password.site} target="_blank">{password.name}</a></td>
-                <td>{password.user}</td>
-                <Data>{password.password}</Data>
-              </tr>
+              <PasswordItem password={password}/>
             ))}
           </tbody>
         </Table>
@@ -133,3 +131,10 @@ const Data = styled.td`
     </ListGroup>
   </Card>
 */
+
+/* <tr>
+                <td>{password.id}</td>
+                <td><a href={password.site} target="_blank">{password.name}</a></td>
+                <td>{password.user}</td>
+                <Data>{password.password}</Data>
+              </tr> */

@@ -73,7 +73,10 @@ const ListItem = styled.li`
   padding: 16px;
   display: flex;
   align-items: center;
-  &:hover{background-color: #E5E9F0;}
-  &:active{background-color: #81A1C1; color: #D8DEE9; }
+
+
+  /* &:hover{ background-color: #E5E9F0; color: red; } */
+  &:hover{ text-decoration: none; }
+  &:active{ background-color: #81A1C1; color: #D8DEE9; }
   font-weight: bold;
 `;

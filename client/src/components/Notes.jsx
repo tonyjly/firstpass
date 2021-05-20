@@ -36,7 +36,7 @@ const Notes = () => {
           <Form.Control as="textarea" rows={3} placeholder="Note" />
         </Form.Group>
 
-        <Button variant="primary" type="submit">
+        <Button variant="primary" type="submit" className="nord-btn">
         Submit
       </Button>
       </Form>

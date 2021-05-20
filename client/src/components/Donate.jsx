@@ -23,7 +23,7 @@ const Donate = () => {
         />
       </InputGroup>
 
-      <Button type="submit">Send</Button>
+      <Button type="submit" className="nord-btn">Send</Button>
 
     </DonateStyle>
   )
