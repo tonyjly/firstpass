@@ -1,5 +1,6 @@
 const express = require("express");
 const PORT = process.env.PORT || 3001;
+const { addPassword, getPasswords } = require('../db/index');
 
 const app = express();
 

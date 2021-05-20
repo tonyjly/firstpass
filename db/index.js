@@ -23,7 +23,7 @@ const addPassword = (name, site, password, callback) => {
     })
 };
 
-const getPassword = () => {
+const getPasswords = () => {
   Password.find({}, (err, results) => {
     if (err) {
       callback(err, null);
@@ -35,5 +35,5 @@ const getPassword = () => {
 
 module.exports = {
   addPassword,
-  getPassword
+  getPasswords
 };
