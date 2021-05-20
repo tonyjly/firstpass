@@ -70,3 +70,32 @@
 ## Day 2 (5/19/2021)
 #### Notes
 - [List Group](https://www.w3schools.com/howto/howto_css_list_group.asp)
+- SSL
+
+```bash
+tony@pop-os:~/Nextcloud/HR-SEA16/mvp/firstpass$ openssl req -x509 -newkey rsa:2048 -keyout keytmp.pem -out cert.pem -days 365
+Generating a RSA private key
+.....+++++
+.....................................................................................................................................+++++
+writing new private key to 'keytmp.pem'
+Enter PEM pass phrase:
+Verifying - Enter PEM pass phrase:
+-----
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [AU]:US
+State or Province Name (full name) [Some-State]:Washington
+Locality Name (eg, city) []:Kirkland
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:firstpass
+Organizational Unit Name (eg, section) []:firstpass
+Common Name (e.g. server FQDN or YOUR name) []:Tony Ly
+Email Address []:firstpass
+tony@pop-os:~/Nextcloud/HR-SEA16/mvp/firstpass$
+```
+- make password column full width
+- jumbotron margin
