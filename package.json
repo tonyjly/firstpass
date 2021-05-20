@@ -21,7 +21,9 @@
   "homepage": "https://github.com/tonyjly/firstpass#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "json-server": "^0.16.3",
     "mongoose": "^5.12.10"
+  },
+  "devDependencies": {
+    "json-server": "^0.16.3"
   }
 }
