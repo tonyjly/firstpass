@@ -36,7 +36,7 @@ function App(props) {
         <Col>
 
           <Jumbotron fluid>
-            <JumboDiv>
+            <JumboDiv className="jumbo">
               <h1>Welcome</h1>
               <p>
                 FirstPass is your free, open-source password manager.
