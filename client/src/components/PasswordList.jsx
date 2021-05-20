@@ -34,6 +34,10 @@ const PasswordList = () => {
       .catch((err) => console.log(err))
   }, []);
 
+  function copyToClipboard(e) {
+    navigator.clipboard.writeText(password)
+  }
+
   return (
     <div>
       {/* ADD PASSWORD */}
@@ -57,6 +61,7 @@ const PasswordList = () => {
           placeholder="Password"
           aria-label="Generate Password"
           aria-describedby="basic-addon2"
+          value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
 
@@ -64,8 +69,19 @@ const PasswordList = () => {
           <InputGroup.Text id="basic-addon2">@example.com</InputGroup.Text>
         </InputGroup.Append> */}
 
+        {/* GENERATE PASSWORD BUTTON */}
         <Button variant="primary" type="submit" className="nord-btn" onClick={(e) => setPassword('yolo')}>
           Generate
+        </Button>
+
+        {/* COPY TO CLIPBOARD BUTTON */}
+        <Button
+          variant="primary"
+          type="text"
+          className="nord-btn"
+          onClick={(e) => copyToClipboard(e)}
+        >
+          Copy
         </Button>
       </InputGroup>
 
