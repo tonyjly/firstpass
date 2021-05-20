@@ -1,5 +1,6 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
+import React, { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom';
+import axios from 'axios';
 import { Card, ListGroup } from 'react-bootstrap';
 
 const passwords = [
@@ -15,14 +16,21 @@ const passwords = [
 
 const PasswordList = () => {
   // use bootstrap fade effect to hide/show passwords
+  const [list, setList] = useState([]);
+
+  useEffect(() => {
+    axios.get('/passwords')
+      .then((res) => setList(res.data))
+      .catch((err) => console.log(err))
+  }, []);
 
   return (
     <div>
       <Card style={{ width: '18rem' }}>
         <Card.Header>Passwords</Card.Header>
         <ListGroup variant="flush">
-          {passwords.map((password) => (
-            <ListGroup.Item>{password}</ListGroup.Item>
+          {list.map((password) => (
+            <ListGroup.Item>{password.name}</ListGroup.Item>
           ))}
         </ListGroup>
       </Card>
