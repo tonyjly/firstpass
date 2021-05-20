@@ -28,8 +28,10 @@ const Navigation = () => {
         {/* COLLAPSE */}
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            {
+              /* <Nav.Link href="#features">Features</Nav.Link>
+              <Nav.Link href="#pricing">Pricing</Nav.Link> */
+            }
           </Nav>
 
           <Nav>
@@ -40,9 +42,9 @@ const Navigation = () => {
             <Nav.Link eventKey={2} href="#account">
               {/* <NavigationIcon>Tony</NavigationIcon> */}
               <NavDropdown title="Tony" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Settings</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1">My Account</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">Support</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Donate</NavDropdown.Item>
+                {/* <NavDropdown.Item href="#action/3.3">Donate</NavDropdown.Item> */}
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">Logout</NavDropdown.Item>
               </NavDropdown>
