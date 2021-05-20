@@ -53,6 +53,9 @@ const NavigationIcon = styled.span`
 
 const JumboDiv = styled.div`
   color: #5E81AC;
+  border-radius: 15px;
+  padding: 0 16px 0 16px;
+  border: 2px blue solid;
 `;
 
 export default {

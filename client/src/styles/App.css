@@ -3,6 +3,9 @@
   background: #D8DEE9;
   flex: 1 0 auto;
   color: #4C566A;
+  min-height: 96vh;
+  padding: 20px;
+  margin: 20px;
 }
 
 .App-logo {
@@ -41,5 +44,9 @@
 }
 
 .jumbo {
-  padding: 0 20px 0 20px;
+  /* padding: 0 20px 0 20px; */
+  border-radius: 25px;
+  radius: 25px;
+  border: 6px red solid;
+  outline-offset: 0.5rem;
 }
