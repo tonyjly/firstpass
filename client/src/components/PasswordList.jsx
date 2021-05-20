@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 import styled from 'styled-components';
-import { Card, ListGroup, Table } from 'react-bootstrap';
+import { Card, ListGroup, Table, Form, Col, Row, Button } from 'react-bootstrap';
 import { Eye, EyeSlash } from '@styled-icons/bootstrap';
 
 const passwords = [
@@ -31,9 +31,33 @@ const PasswordList = () => {
 
   return (
     <div>
-      <Title>Password List</Title>
-      <ListStyle>
+      <Title>Add a Password</Title>
 
+      <ListStyle>
+        <Form>
+          <Form.Row>
+            <Col>
+              <Form.Control placeholder="Label" />
+            </Col>
+            <Col>
+              <Form.Control placeholder="http://example.com" />
+            </Col>
+            <Col>
+              <Form.Control placeholder="Username" />
+            </Col>
+            <Col>
+              <Form.Control placeholder="Password" />
+            </Col>
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+          </Form.Row>
+        </Form>
+      </ListStyle>
+
+      <Title>Password List</Title>
+
+      <ListStyle>
         <Table striped bordered hover responsive>
           <thead className="ptable">
             <th>#</th>

@@ -8,8 +8,10 @@ const Donate = () => {
 
   return (
     <DonateStyle>
-    <h1>Donate</h1>
-    <p>Thank you for supporting us and keeping our service free!</p>
+
+      <h1>Donate</h1>
+      <p>Thank you for keeping our service free!</p>
+
       <InputGroup className="mb-3">
         <InputGroup.Prepend>
           <InputGroup.Text>$</InputGroup.Text>
@@ -20,7 +22,8 @@ const Donate = () => {
           aria-label="Amount (to the nearest dollar)"
         />
       </InputGroup>
-      <Button>Send</Button>
+
+      <Button type="submit">Send</Button>
 
     </DonateStyle>
   )
