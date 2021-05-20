@@ -17,6 +17,7 @@
       - [TODO](#todo)
 - [Blue Ocean Notes](#blue-ocean-notes)
   - [State Management](#state-management)
+  - [Clients](#clients)
   - [Background](#background)
   - [Criteria](#criteria)
   - [Goals](#goals)
@@ -124,13 +125,14 @@ tony@pop-os:~/Nextcloud/HR-SEA16/mvp/firstpass$
 - medium app: context
 - large app: redux
 
-London Buchanan, Stuart
-- manage large scale events
-- coachella
-- large sporting events
-- london buchanan manages the marketing
-
-Stuart from Australia
+## Clients
+- Company: LeadEvents
+- London Buchanan, Stuart
+  - manage large scale events
+  - coachella
+  - large sporting events
+  - london buchanan manages the marketing
+- Stuart from Australia
 
 ## Background
 - Event management company
@@ -174,7 +176,6 @@ Stuart from Australia
 - admins can access all photos
 - brand colors: yellow, purple
   - market towards millenial customers
-- company name: LeadEvents
 - name of app: open to us
 - needs a login for each user
 - budget for servers: as low as possible
@@ -198,9 +199,6 @@ Stuart from Australia
 ## Prioritization
 - users can sort through photos, and add tags
   - nice to have, software will auto tag photos
-
-
-
 
 1. MVP
    1. photo gallery
