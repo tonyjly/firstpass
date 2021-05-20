@@ -26,17 +26,17 @@ const Menu = () => {
         Notes
       </ListItem>
 
-      <ListItem>
+      {/* <ListItem className="disabled">
         <Logo><AddressBook size="28"/></Logo>
         Addresses
-      </ListItem>
+      </ListItem> */}
 
-      <ListItem>
+      <ListItem className="disabled">
         <Logo><Payment size="28"/></Logo>
         Payments
       </ListItem>
 
-      <ListItem>
+      <ListItem className="disabled">
         <Logo><BuildingBank size="28"/></Logo>
         Accounts
       </ListItem>

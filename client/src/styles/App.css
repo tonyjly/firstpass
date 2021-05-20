@@ -50,3 +50,8 @@
   border: 6px red solid;
   outline-offset: 0.5rem;
 }
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
