@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import AppStyles from '../styles/AppStyles';
 import { ShieldKeyhole, Home5, Key } from '@styled-icons/remix-line';
-import { Note } from '@styled-icons/boxicons-regular';
+import { Note, Bitcoin } from '@styled-icons/boxicons-regular';
 import { AddressBook } from '@styled-icons/fa-regular';
 import { Payment, BuildingBank } from '@styled-icons/fluentui-system-regular';
 
@@ -41,6 +41,11 @@ const Menu = () => {
         Accounts
       </ListItem>
 
+      <ListItem>
+        <Logo><Bitcoin size="28"/></Logo>
+        Donate
+      </ListItem>
+
     </ListGroup>
   )
 }
@@ -56,9 +61,9 @@ const ListGroup = styled.ul`
 
 const ListItem = styled.li`
   border: 0 solid black;
-  margin-top: -1px;
-  /* background-color: green; */
+  /* margin-top: -1px; */
   padding: 16px;
   display: flex;
   align-items: center;
+  &hover:{}
 `;
