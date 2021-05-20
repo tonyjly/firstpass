@@ -17,6 +17,11 @@
       - [TODO](#todo)
 - [Blue Ocean Notes](#blue-ocean-notes)
   - [State Management](#state-management)
+  - [Background](#background)
+  - [Criteria](#criteria)
+  - [Goals](#goals)
+  - [Constraints](#constraints)
+  - [Prioritization](#prioritization)
 
 ---
 
@@ -127,4 +132,79 @@ London Buchanan, Stuart
 
 Stuart from Australia
 
+## Background
+- Event management company
+  - many different scale events
+  - create branding campaigns
+  - has trouble sorting through photos for each event
+  - 1000s of photos
+  - need a photo finder
+  - need to be able to filter through photos that meet certain criteria
+  - app will automatically assign tags to the photos
+  - "hey circle find me a photo of me holding a dog"
+  - goal is to be able to have this tool, so that they can achieve better market *value*?
+  - 100s, possibly 1000s, of photos
+  - can sort them in the fastest way possible
 
+## Criteria
+- clothing
+- food
+- beverages
+- certain landscape
+- what's going on in the background
+
+## Goals
+- They currently have a website
+- They want to be able to access on a mobile device
+- Photos uploaded could be users, event organizers,
+- Anybody at the event can access & download these photos
+- sort by
+  - events
+  - users
+  - users can share with each other
+  - friend system
+- turn key platform
+  - here's this application
+  - take photos from within app
+  - hey Siri, find me a photo of "a person wearing a red shirt and drinking a beer"
+  - users can add tags to the photos
+  - use in web browser and photos
+  - users have access to their own photos
+  - users can share their photos with their friends
+- admins can access all photos
+- brand colors: yellow, purple
+  - market towards millenial customers
+- company name: LeadEvents
+- name of app: open to us
+- needs a login for each user
+- budget for servers: as low as possible
+- expectation: should grow as company grows
+- scalable
+- when not logged in: users should see stock photos, general marketing, event photos
+- should be able to share photos with other users, not necessarily a like feature
+- JOSH nice haves:
+  - when user logs in, be able to upload all the photos and sort them automatically
+
+- user info
+  - name
+  - phone
+  - email address
+
+
+## Constraints
+- develop API in-house
+  - minimize use of external APIs
+
+## Prioritization
+- users can sort through photos, and add tags
+  - nice to have, software will auto tag photos
+
+
+
+
+1. MVP
+   1. photo gallery
+   2. user system
+   3.
+2. stretch goals
+   - auto-tagging = stretch (Josh)
