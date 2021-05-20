@@ -8,7 +8,7 @@ const Announcement = () => {
 
   return (
     <Alert key="success" variant="success" show={show}>
-      This is a success alert—check it out!
+      You have logged in successfully!
     </Alert>
   )
 }
