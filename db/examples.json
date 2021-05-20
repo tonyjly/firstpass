@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "name": "Spotify",
+    "site": "http://www.spotify.com",
+    "user": "wizardhat",
+    "password": "oV#xkEXW9M*gLnzch*f@#M7Eept!ZBNJ"
+  },
+  {
+    "id": "2",
+    "name": "Soundcloud",
+    "site": "http://www.soundcloud.com",
+    "user": "wizardicestorm",
+    "password": "ZpJsucd8$@5gF*EW4%UTYEjCFGQNhmau"
+  },
+  {
+    "id": "3",
+    "name": "Facebook",
+    "site": "http://www.facebook.com",
+    "user": "wizardegg",
+    "password": "yQnsnTps7WBQ9pG@3jW7RBGd95&&26d^"
+  },
+  {
+    "id": "4",
+    "name": "Reddit",
+    "site": "http://www.reddit.com",
+    "user": "wizardrobe",
+    "password": "hfyt&zxSBfLouBe4MF6eMsu3PUHH7KR4"
+  },
+  {
+    "id": "5",
+    "name": "Amazon",
+    "site": "http://www.amazon.com",
+    "user": "wizardspirit",
+    "password": "7&Z@S7$479Cz7J#Vbr3Ukyc&2ZUBipfM"
+  },
+  {
+    "id": "6",
+    "name": "GitHub",
+    "site": "http://www.github.com",
+    "user": "wizardmagic",
+    "password": "8VBpH^dzoKy#dC5w@&ZEhrT5DF4AcG$F"
+  },
+  {
+    "id": "7",
+    "name": "Google",
+    "site": "http://www.google.com",
+    "user": "wizardfish",
+    "password": "4zXUiHCkAMPMf#LWdP*HJw59dGEfs&gT"
+  },
+  {
+    "id": "8",
+    "name": "LinkedIn",
+    "site": "http://www.linkedin.com",
+    "user": "wizardlemonade",
+    "password": "ToHi5UkKA^oF3EYVQcM@vFL2m&dohSSH"
+  },
+  {
+    "id": "9",
+    "name": "Miro",
+    "site": "http://www.miro.com",
+    "user": "wizardtuna",
+    "password": "JmsZd#^Qxae9DkC2LLeC&X$7J8Uc9RBF"
+  },
+  {
+    "id": "10",
+    "name": "StackOverflow",
+    "site": "http://www.stackoverflow.com",
+    "user": "wizardgarlic",
+    "password": "RxYDB2sAsc$kgmp9GCHip%^SmRJArRM4"
+  }
+]
