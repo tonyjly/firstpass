@@ -39,8 +39,8 @@ const List = styled.div`
 
 const Logo = styled.image`
   /* fill: blue; */
-  color: blue;
-  border-color: green;
+  /* color: blue; */
+  margin-right: 16px;
 `;
 
 const NavigationLogo = styled.span`

@@ -2,10 +2,14 @@
 // import ReactDOM from 'react-dom';
 import logo from './images/shield-keyhole-line.svg';
 import './styles/App.css';
-// import styled from 'styled-components';
+import styled from 'styled-components';
+import Menu from './components/Menu';
 import PasswordList from './components/PasswordList';
 import AppStyles from './styles/AppStyles';
-import { ShieldKeyhole } from '@styled-icons/remix-line';
+import { ShieldKeyhole, Home5, Key } from '@styled-icons/remix-line';
+import { Note } from '@styled-icons/boxicons-regular';
+import { AddressBook } from '@styled-icons/fa-regular';
+import { Payment, BuildingBank } from '@styled-icons/fluentui-system-regular';
 
 import { Container, Row, Col, Jumbotron, Navbar } from 'react-bootstrap';
 import Navigation from './components/Navigation';
@@ -26,12 +30,7 @@ function App(props) {
       <Row>
 
         <Col sm={2}>
-          <p>Home</p>
-          <p>Passwords</p>
-          <p>Notes</p>
-          <p>Addresses</p>
-          <p>Payments</p>
-          <p>Bank Accounts</p>
+          <Menu />
         </Col>
 
         <Col>
@@ -54,27 +53,18 @@ function App(props) {
 
 export default App;
 
-/* <div>
-<Navigation/>
+const ListGroup = styled.ul`
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 
-<Main>
+`;
 
-  <div className="App-div">
-    <Logo src={logo} className="App-logo" alt="logo"/>
-  </div>
-
-  <Jumbotron fluid>
-    <JumboDiv>
-      <h1>Welcome</h1>
-      <p>
-        To your free, open-source password manager.
-      </p>
-    </JumboDiv>
-  </Jumbotron>
-
-  <List>
-    <PasswordList />
-  </List>
-
-</Main>
-</div> */
+const ListItem = styled.li`
+  border: 0 solid black;
+  margin-top: -1px;
+  /* background-color: green; */
+  padding: 16px;
+  display: flex;
+  align-items: center;
+`;
