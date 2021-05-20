@@ -65,7 +65,7 @@ const ListItem = styled.li`
   padding: 16px;
   display: flex;
   align-items: center;
-  &:hover{color: #88C0D0;}
-  &:active{color: #3B4252;}
+  &:hover{background-color: #E5E9F0;}
+  &:active{background-color: #81A1C1; color: #D8DEE9;}
   font-weight: bold;
 `;
