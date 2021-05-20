@@ -4,6 +4,7 @@ import { Home5, Key } from '@styled-icons/remix-line';
 import { Note, Bitcoin } from '@styled-icons/boxicons-regular';
 import { AddressBook } from '@styled-icons/fa-regular';
 import { Payment, BuildingBank } from '@styled-icons/fluentui-system-regular';
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
   const { Logo } = AppStyles;
@@ -12,18 +13,24 @@ const Menu = () => {
     <ListGroup>
 
       <ListItem>
-        <Logo><Home5 size="28"/></Logo>
-        Home
+        <Link to="/">
+          <Logo><Home5 size="28"/></Logo>
+          Home
+        </Link>
       </ListItem>
 
       <ListItem>
-        <Logo><Key size="28"/></Logo>
-        Passwords
+        <Link to="/passwords">
+          <Logo><Key size="28"/></Logo>
+          Passwords
+        </Link>
       </ListItem>
 
       <ListItem>
-        <Logo><Note size="28"/></Logo>
-        Notes
+        <Link to="/notes">
+          <Logo><Note size="28"/></Logo>
+          Notes
+        </Link>
       </ListItem>
 
       {/* <ListItem className="disabled">
@@ -42,8 +49,10 @@ const Menu = () => {
       </ListItem>
 
       <ListItem>
-        <Logo><Bitcoin size="28"/></Logo>
-        Donate
+        <Link to="/donate">
+          <Logo><Bitcoin size="28"/></Logo>
+          Donate
+        </Link>
       </ListItem>
 
     </ListGroup>
@@ -56,7 +65,6 @@ const ListGroup = styled.ul`
   list-style-type: none;
   padding: 0;
   margin: 0;
-
 `;
 
 const ListItem = styled.li`
@@ -66,6 +74,6 @@ const ListItem = styled.li`
   display: flex;
   align-items: center;
   &:hover{background-color: #E5E9F0;}
-  &:active{background-color: #81A1C1; color: #D8DEE9;}
+  &:active{background-color: #81A1C1; color: #D8DEE9; }
   font-weight: bold;
 `;

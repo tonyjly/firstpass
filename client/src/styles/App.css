@@ -46,9 +46,8 @@
 .jumbo {
   /* padding: 0 20px 0 20px; */
   border-radius: 25px;
-  radius: 25px;
-  border: 6px red solid;
-  outline-offset: 0.5rem;
+  border: 8px #4C566A solid;
+  /* outline-offset: 0.5rem; */
 }
 
 .disabled {

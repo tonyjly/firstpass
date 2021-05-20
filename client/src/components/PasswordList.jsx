@@ -30,26 +30,30 @@ const PasswordList = () => {
   }, []);
 
   return (
-    <ListStyle>
-      <Table striped bordered hover responsive>
-        <thead className="ptable">
-          <th>#</th>
-          <th>Name</th>
-          <th>Username</th>
-          <th>Password</th>
-        </thead>
-        <tbody className="ptable">
-          {list.map((password) => (
-            <tr>
-              <td>{password.id}</td>
-              <td><a href={password.site} target="_blank">{password.name}</a></td>
-              <td>{password.user}</td>
-              <td>{password.password}</td>
-            </tr>
-          ))}
-        </tbody>
-      </Table>
-    </ListStyle>
+    <div>
+      <Title>Password List</Title>
+      <ListStyle>
+
+        <Table striped bordered hover responsive>
+          <thead className="ptable">
+            <th>#</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Password</th>
+          </thead>
+          <tbody className="ptable">
+            {list.map((password) => (
+              <tr>
+                <td>{password.id}</td>
+                <td><a href={password.site} target="_blank">{password.name}</a></td>
+                <td>{password.user}</td>
+                <Data>{password.password}</Data>
+              </tr>
+            ))}
+          </tbody>
+        </Table>
+      </ListStyle>
+    </div>
   )
 }
 
@@ -58,6 +62,15 @@ export default PasswordList;
 const ListStyle = styled.div`
   font-weight: bold;
   color: #5E81AC;
+  margin-top: 20px;
+`;
+
+const Title = styled.h1`
+  margin-top: 20px;
+`;
+
+const Data = styled.td`
+  visibility:
 `;
 
 /* CARD LISTGROUP
