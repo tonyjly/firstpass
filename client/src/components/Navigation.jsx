@@ -2,12 +2,12 @@ import AppStyles from '../styles/AppStyles';
 import styled from 'styled-components';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { ShieldKeyhole } from '@styled-icons/remix-line';
-import { KeyboardArrowDown, Settings } from '@styled-icons/material-rounded';
+import { Settings } from '@styled-icons/material-rounded';
 import { PersonCircle } from '@styled-icons/bootstrap';
 // import { Menu } from '@styled-icons/material-rounded';
 
 
-const { Header, Left, Right, Main, NavigationLogo, NavigationIcon } = AppStyles;
+const { NavigationLogo, NavigationIcon } = AppStyles;
 
 const Navigation = () => {
   // Navigation ELEMENTS HERE
@@ -59,11 +59,4 @@ export default Navigation;
 const Brand = styled.span`
   font-weight: bold;
   color: #81A1C1;
-`;
-
-
-const NavTest = styled.div.attrs(props => ({
-  className: "small",
-}))`
-  background: black;
 `;

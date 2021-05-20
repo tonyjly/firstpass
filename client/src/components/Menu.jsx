@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import AppStyles from '../styles/AppStyles';
-import { ShieldKeyhole, Home5, Key } from '@styled-icons/remix-line';
+import { Home5, Key } from '@styled-icons/remix-line';
 import { Note, Bitcoin } from '@styled-icons/boxicons-regular';
 import { AddressBook } from '@styled-icons/fa-regular';
 import { Payment, BuildingBank } from '@styled-icons/fluentui-system-regular';
@@ -65,5 +65,4 @@ const ListItem = styled.li`
   padding: 16px;
   display: flex;
   align-items: center;
-  &hover:{}
 `;
