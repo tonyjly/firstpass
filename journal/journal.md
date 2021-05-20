@@ -12,6 +12,8 @@
       - [Design Tool (Bootstrap vs. Material-UI)](#design-tool-bootstrap-vs-material-ui)
       - [Selected Tools](#selected-tools)
       - [Ideas](#ideas)
+  - [Day 2 (5/19/2021)](#day-2-5192021)
+      - [Notes](#notes)
 
 ---
 
@@ -62,3 +64,9 @@
 - password generators
   - [random.org](https://www.random.org/passwords/)
   - [manytools.org](https://manytools.org/network/password-generator/)
+
+---
+
+## Day 2 (5/19/2021)
+#### Notes
+- [List Group](https://www.w3schools.com/howto/howto_css_list_group.asp)
