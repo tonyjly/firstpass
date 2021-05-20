@@ -16,6 +16,7 @@
       - [Notes](#notes)
       - [TODO](#todo)
 - [Blue Ocean Notes](#blue-ocean-notes)
+  - [State Management](#state-management)
 
 ---
 
@@ -113,6 +114,17 @@ tony@pop-os:~/Nextcloud/HR-SEA16/mvp/firstpass$
 
 # Blue Ocean Notes
 
--
+## State Management
+- small app: hooks
+- medium app: context
+- large app: redux
+
+London Buchanan, Stuart
+- manage large scale events
+- coachella
+- large sporting events
+- london buchanan manages the marketing
+
+Stuart from Australia
 
 
