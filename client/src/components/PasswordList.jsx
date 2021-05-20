@@ -1,32 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 import styled from 'styled-components';
 // import { Card, ListGroup, Table, Form, Col, Row, Button, InputGroup, FormControl } from 'react-bootstrap';
-import { Table, Button, InputGroup, FormControl } from 'react-bootstrap';
+import { Table, Button, InputGroup, FormControl, Overlay, Tooltip } from 'react-bootstrap';
+import passwords from './examplePasswords.js';
 
 import PasswordCreate from './PasswordCreate';
 import PasswordItem from './PasswordItem';
-
-const passwords = [
-  'ToHi5UkKA^oF3EYVQcM@vFL2m&dohSSH',
-  'Qu!2!4L%k3kV&U3cRr@k5iGV2hWuL4A*',
-  '4zXUiHCkAMPMf#LWdP*HJw59dGEfs&gT',
-  '8VBpH^dzoKy#dC5w@&ZEhrT5DF4AcG$F',
-  'Ew*U%5GwA9TkYa!omN#u&x*EbfAssf7*',
-  'gXdwM4ys!J$R%&!rQ@vd3d9R8LMHBZqK',
-  'S*w*CkN4$pVTwY&BdBQbeWXP85mbVtn9',
-  'wE!QTkvKUsVA8sXF53rgPe*qRLV&x9Wx',
-  'E9SedUig*&s3v9W9J9hp!Y8@DX^Q5^br',
-  'Gtf&e8P$QXB*@aG$Nk@sXpxk#CZKgy$F',
-  '&S6&f6bNCfqqR*Fn^&9Lo63Xx45*ZHiR'
-];
 
 const PasswordList = () => {
   // use bootstrap fade effect to hide/show passwords
   const [list, setList] = useState([]);
   const [modalShow, setModalShow] = useState(false);
   const [password, setPassword] = useState('');
+  const [tooltip, setTooltip] = useState(false);
+  const target = useRef(null);
 
   useEffect(() => {
     axios.get('/passwords')
@@ -36,6 +25,16 @@ const PasswordList = () => {
 
   function copyToClipboard(e) {
     navigator.clipboard.writeText(password)
+  }
+
+  function generate() {
+    const min = 1;
+    const max = 500;
+    const rand = Math.floor(min + Math.random() * (max - min));
+
+    setPassword(
+      passwords[rand]
+    )
   }
 
   return (
@@ -70,19 +69,33 @@ const PasswordList = () => {
         </InputGroup.Append> */}
 
         {/* GENERATE PASSWORD BUTTON */}
-        <Button variant="primary" type="submit" className="nord-btn" onClick={(e) => setPassword('yolo')}>
+        <Button variant="primary" type="submit" className="nord-btn" onClick={(e) => setPassword(() => generate())}>
           Generate
         </Button>
 
         {/* COPY TO CLIPBOARD BUTTON */}
         <Button
+          ref={target}
           variant="primary"
           type="text"
           className="nord-btn"
-          onClick={(e) => copyToClipboard(e)}
+          onClick={(e) => {
+            copyToClipboard(e);
+            setTooltip(!tooltip);
+          }}
         >
           Copy
         </Button>
+
+        {/* COPY TO CLIPBOARD TOOLTIP */}
+        <Overlay target={target.current} show={tooltip} placement="top">
+          {(props) => (
+            <Tooltip id="overlay-example" {...props}>
+              Copied
+            </Tooltip>
+          )}
+        </Overlay>
+
       </InputGroup>
 
       <br/>
