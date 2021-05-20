@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 import styled from 'styled-components';
-import { Card, ListGroup, Table, Form, Col, Row, Button } from 'react-bootstrap';
+import { Card, ListGroup, Table, Form, Col, Row, Button, InputGroup, FormControl } from 'react-bootstrap';
 import { Eye, EyeSlash } from '@styled-icons/bootstrap';
+import PasswordCreate from './PasswordCreate';
 
 const passwords = [
   'ToHi5UkKA^oF3EYVQcM@vFL2m&dohSSH',
@@ -22,6 +23,7 @@ const passwords = [
 const PasswordList = () => {
   // use bootstrap fade effect to hide/show passwords
   const [list, setList] = useState([]);
+  const [modalShow, setModalShow] = useState(false);
 
   useEffect(() => {
     axios.get('/passwords')
@@ -31,37 +33,61 @@ const PasswordList = () => {
 
   return (
     <div>
-      <Title>Add a Password</Title>
+      {/* ADD PASSWORD */}
+      <Title>Add Password</Title>
 
-      <ListStyle>
-        <Form>
-          <Form.Row>
-            <Col>
-              <Form.Control placeholder="Label" />
-            </Col>
-            <Col>
-              <Form.Control placeholder="http://example.com" />
-            </Col>
-            <Col>
-              <Form.Control placeholder="Username" />
-            </Col>
-            <Col>
-              <Form.Control placeholder="Password" />
-            </Col>
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
-          </Form.Row>
-        </Form>
-      </ListStyle>
+      <Button variant="primary" type="text" className="nord-btn" onClick={() => setModalShow(true)}>
+        Add
+      </Button>
 
+      <PasswordCreate
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
+
+      <br/>
+      {/* GENERATE PASSWORD */}
+      <Title>Generate Password</Title>
+
+      <InputGroup className="mb-3">
+        <FormControl
+          placeholder="Recipient's username"
+          aria-label="Recipient's username"
+          aria-describedby="basic-addon2"
+          value=""
+        />
+
+        {/* <InputGroup.Append>
+          <InputGroup.Text id="basic-addon2">@example.com</InputGroup.Text>
+        </InputGroup.Append> */}
+
+        <Button variant="primary" type="submit" className="nord-btn" onClick={(e) => {e.preventDefault();}}>
+          Generate
+        </Button>
+      </InputGroup>
+
+      <br/>
+
+      {/* PASSWORD LIST */}
       <Title>Password List</Title>
 
       <ListStyle>
+
+      <InputGroup className="mb-3">
+        <FormControl
+          placeholder="Filter Passwords"
+          aria-label="Filter Passwords"
+          aria-describedby="basic-addon1"
+        />
+        <Button variant="primary" type="submit" className="nord-btn" onClick={(e) => {e.preventDefault();}}>
+          Search
+        </Button>
+      </InputGroup>
+
         <Table striped bordered hover responsive>
           <thead className="ptable">
             <th>#</th>
-            <th>Name</th>
+            <th>Label</th>
             <th>Username</th>
             <th>Password</th>
           </thead>
@@ -89,7 +115,7 @@ const ListStyle = styled.div`
   margin-top: 20px;
 `;
 
-const Title = styled.h1`
+const Title = styled.h3`
   margin-top: 20px;
 `;
 

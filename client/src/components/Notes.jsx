@@ -10,7 +10,7 @@ const Notes = () => {
     <NoteStyle>
       <Form>
         <Form.Group controlId="exampleForm.ControlTextarea1">
-          <Form.Label><h1>Secure Note</h1></Form.Label>
+          <Form.Label><h3>Secure Note</h3></Form.Label>
 
           <Form.Row className="align-items-center">
             <Col xs="auto" className="my-1">

@@ -9,7 +9,7 @@ const Donate = () => {
   return (
     <DonateStyle>
 
-      <h1>Donate</h1>
+      <h3>Donate</h3>
       <p>Thank you for keeping our service free!</p>
 
       <InputGroup className="mb-3">
