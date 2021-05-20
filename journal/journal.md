@@ -14,6 +14,7 @@
       - [Ideas](#ideas)
   - [Day 2 (5/19/2021)](#day-2-5192021)
       - [Notes](#notes)
+      - [TODO](#todo)
 
 ---
 
@@ -70,7 +71,6 @@
 ## Day 2 (5/19/2021)
 #### Notes
 - [List Group](https://www.w3schools.com/howto/howto_css_list_group.asp)
-- SSL
 
 ```bash
 tony@pop-os:~/Nextcloud/HR-SEA16/mvp/firstpass$ openssl req -x509 -newkey rsa:2048 -keyout keytmp.pem -out cert.pem -days 365
@@ -97,5 +97,12 @@ Common Name (e.g. server FQDN or YOUR name) []:Tony Ly
 Email Address []:firstpass
 tony@pop-os:~/Nextcloud/HR-SEA16/mvp/firstpass$
 ```
+
+---
+
+
+#### TODO
 - make password column full width
 - jumbotron margin
+- https://ui.dev/react-router-v4-pass-props-to-components/
+- SSL
