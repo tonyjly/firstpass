@@ -203,6 +203,6 @@ tony@pop-os:~/Nextcloud/HR-SEA16/mvp/firstpass$
 1. MVP
    1. photo gallery
    2. user system
-   3.
+   3. upload photos
 2. stretch goals
    - auto-tagging = stretch (Josh)
