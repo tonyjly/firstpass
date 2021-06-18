@@ -5,10 +5,10 @@ const jsonServer = require('json-server');
 
 const app = express();
 const server = jsonServer.create();
-const router = jsonServer.router('/home/tony/Nextcloud/HR-SEA16/mvp/firstpass/db/examples.json');
+const router = jsonServer.router('./db/examples.json');
 
 // app.get('/api', (req, res) => {
-//   res.status(200).send('Yoloswag');
+//   res.status(200).send('Success');
 // });
 
 // app.listen(PORT, () => {
