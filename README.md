@@ -1,2 +1,2 @@
 # firstpass
-A free and open-source password manager
+An open-source password manager
